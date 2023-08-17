@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ENCRIPTADOR</title>
+    <link rel="stylesheet" href="Encriptation.css"
+  </head>
+  <body>
+    <div id="EcripContainer">
+
+      <div id="title">
+        <h2>CIFRAR / DESCIFRAR</h2>
+      </div>
+
+      <input type="text" id="text1" placeholder="Ingresa el Dato Decifrado">
+      <input type="text" id="text2" placeholder="Ingresa el Dato Cifrado">
+      
+      <div id="title2">
+        <h2>Mensaje Cifrado    /    Mensaje Descifrado</h2>
+      </div>
+
+    <input id="cifrado" disabled type="text">
+    <input id="deCifrado" disabled type="text">
+
+    <button onclick="encriptar()">Cifrar</button>
+      <button onclick="desencriptar()">Descifrar </button>
+
+      <h3>Clave:</h3>
+      <input type="number" id="clave" min="1" max="25" value="1">
+      <br><br>
+
+      <div id= "back">
+        <button type="button" class="EcripContainer" onclick="reiniciar()">Reiniciar</button>
+      </div>
+  
+    <script src="Encriptation.js"></script>
+  </body>
+  </html>
